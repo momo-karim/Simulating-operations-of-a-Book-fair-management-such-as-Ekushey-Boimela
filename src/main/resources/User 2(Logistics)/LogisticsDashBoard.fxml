@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="351.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxml.AdminDashBoard">
+   <children>
+      <Button layoutX="254.0" layoutY="79.0" mnemonicParsing="false" text="Scheduled Event" />
+      <Text layoutX="230.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBoard">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="282.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logistics" />
+      <Button layoutX="219.0" layoutY="110.0" mnemonicParsing="false" text="Booth and Stall Management" />
+      <Button layoutX="238.0" layoutY="143.0" mnemonicParsing="false" text="Inventory Management" />
+      <Button layoutX="207.0" layoutY="176.0" mnemonicParsing="false" text="Communication and Coordination" />
+      <Button layoutX="244.0" layoutY="208.0" mnemonicParsing="false" text="Vendor Management" />
+      <Button layoutX="252.0" layoutY="240.0" mnemonicParsing="false" text="Pending Deliveries" />
+      <Button layoutX="248.0" layoutY="271.0" mnemonicParsing="false" text="Venue Maintenance" />
+      <Button layoutX="241.0" layoutY="305.0" mnemonicParsing="false" text="Make Delivery request" />
+   </children>
+</AnchorPane>

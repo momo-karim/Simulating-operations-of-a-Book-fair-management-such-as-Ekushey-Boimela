@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User 2(Logistics).VenueMaintenance">
+   <children>
+      <TableView layoutX="138.0" layoutY="100.0" prefHeight="200.0" prefWidth="305.0">
+        <columns>
+          <TableColumn prefWidth="82.0" text="Stall No" />
+          <TableColumn prefWidth="68.0" text="Cleaning" />
+            <TableColumn prefWidth="75.0" text="Repairs" />
+            <TableColumn prefWidth="75.0" text="Adjustment" />
+        </columns>
+      </TableView>
+      <Text layoutX="199.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maintenance Request">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <TabPane layoutX="90.0" layoutY="-220.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Untitled Tab 1" />
+          <Tab text="Untitled Tab 2">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

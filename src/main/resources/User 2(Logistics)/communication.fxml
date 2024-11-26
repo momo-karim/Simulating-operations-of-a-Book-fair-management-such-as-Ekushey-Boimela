@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User 2(Logistics).Communication">
+   <children>
+      <TableView layoutX="42.0" layoutY="55.0" prefHeight="131.0" prefWidth="545.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Event titel" />
+            <TableColumn prefWidth="89.0" text="Preferred date" />
+            <TableColumn prefWidth="99.0" text="Time / Duration" />
+            <TableColumn prefWidth="91.0" text="Equipment" />
+            <TableColumn prefWidth="79.0" text="Logistics" />
+            <TableColumn prefWidth="111.0" text="Locattion" />
+         </columns>
+      </TableView>
+      <Text fontSmoothingType="LCD" layoutX="253.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scheduled Events">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="42.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin:" />
+      <Text layoutX="42.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Manager:" />
+      <Line endX="100.0" layoutX="300.0" layoutY="208.0" startX="-100.0" />
+      <Text fill="RED" layoutX="42.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Messages">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Text>
+      <TextArea layoutX="276.0" layoutY="221.0" prefHeight="116.0" prefWidth="200.0" text="Send Text&#10;" />
+      <Button layoutX="495.0" layoutY="221.0" mnemonicParsing="false" text="Send" />
+      <Label fx:id="adminMessageLabel" layoutX="186.0" layoutY="242.0" />
+      <Label fx:id="EventManagerMessageLabel" layoutX="180.0" layoutY="270.0" prefHeight="17.0" prefWidth="12.0" />
+      <Label fx:id="messageLabel" layoutX="434.0" layoutY="354.0" />
+   </children>
+</AnchorPane>

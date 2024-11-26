@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User 2(Logistics).MakeATransportationRequests">
+   <children>
+      <DatePicker layoutX="103.0" layoutY="59.0" promptText="Delivery Date" />
+      <TextField layoutX="103.0" layoutY="107.0" text="Pickup Location" />
+      <TextField layoutX="103.0" layoutY="143.0" text="Drop-off Location" />
+      <ComboBox layoutX="103.0" layoutY="188.0" prefWidth="150.0" promptText="Delivery Items" />
+      <TextField layoutX="104.0" layoutY="225.0" text="Vendor Name" />
+      <RadioButton layoutX="257.0" layoutY="266.0" mnemonicParsing="false" text="AM" />
+      <RadioButton layoutX="321.0" layoutY="266.0" mnemonicParsing="false" text="PM" />
+      <TextField layoutX="104.0" layoutY="262.0" text="Delivery time" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="&lt;" />
+      <Button layoutX="410.0" layoutY="351.0" mnemonicParsing="false" text="Main Menu" />
+      <Button layoutX="507.0" layoutY="351.0" mnemonicParsing="false" text="Log Out" />
+      <Label fx:id="messageLabel" layoutX="263.0" layoutY="307.0" />
+      <Button layoutX="104.0" layoutY="303.0" mnemonicParsing="false" text="Confirm" />
+   </children>
+</AnchorPane>

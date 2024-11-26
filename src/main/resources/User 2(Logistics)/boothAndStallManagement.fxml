@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User 2(Logistics).BoothAndStallManagement">
+   <children>
+      <TableView layoutX="27.0" layoutY="51.0" prefHeight="184.0" prefWidth="307.0">
+        <columns>
+          <TableColumn prefWidth="101.0" text="Boooth Location" />
+          <TableColumn prefWidth="98.0" text="Exhibitor Name" />
+            <TableColumn prefWidth="103.0" text="Booth Size" />
+        </columns>
+      </TableView>
+      <Text layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stall  Information" />
+      <Button layoutX="2.0" layoutY="17.0" mnemonicParsing="false" text="&lt;" />
+      <Line endX="-100.0" endY="-153.0" layoutX="443.0" layoutY="178.0" startX="-100.0" startY="189.0" />
+      <Button layoutX="46.0" layoutY="257.0" mnemonicParsing="false" text="Sort By Size" />
+      <Label layoutX="57.0" layoutY="291.0" text="Backwords" />
+      <TextArea layoutX="367.0" layoutY="82.0" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="422.0" layoutY="43.0" text="Map for Location" />
+      <Button layoutX="179.0" layoutY="259.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="154.0" text="Coorditanate Booth Setup" />
+      <Button layoutX="271.0" layoutY="335.0" mnemonicParsing="false" text="Log Out" />
+      <Label fx:id="messageLabel" layoutX="57.0" layoutY="327.0" />
+   </children>
+</AnchorPane>

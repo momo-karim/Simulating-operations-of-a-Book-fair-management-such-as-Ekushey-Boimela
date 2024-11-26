@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="351.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.fxml.AdminDashBoard">
+   <children>
+      <Button layoutX="243.0" layoutY="78.0" mnemonicParsing="false" text="Manage User Role" />
+      <Text layoutX="230.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBoard">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="282.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" />
+      <Button layoutX="241.0" layoutY="111.0" mnemonicParsing="false" onAction="#onExibitorApplication" text="Exibitor Application" />
+      <Button layoutX="230.0" layoutY="144.0" mnemonicParsing="false" text="Event Proposal Module" />
+      <Button layoutX="244.0" layoutY="176.0" mnemonicParsing="false" text=" Scheduled Event " />
+      <Button layoutX="246.0" layoutY="207.0" mnemonicParsing="false" text="Generate Reports" />
+      <Button layoutX="247.0" layoutY="239.0" mnemonicParsing="false" text="Booth Allocation" />
+      <Button layoutX="261.0" layoutY="272.0" mnemonicParsing="false" text="Complaints" />
+      <Button layoutX="261.0" layoutY="303.0" mnemonicParsing="false" text="Monitoring" />
+      <Button layoutX="477.0" layoutY="303.0" mnemonicParsing="false" onAction="#onLogOut" text="Logout" />
+   </children>
+</AnchorPane>
