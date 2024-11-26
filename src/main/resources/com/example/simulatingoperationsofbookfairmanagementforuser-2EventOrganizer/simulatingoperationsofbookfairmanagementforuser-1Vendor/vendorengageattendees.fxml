@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="244.0" layoutY="90.0" text="ENGAGE ATTENDEES" />
+      <TextField layoutX="225.0" layoutY="154.0" prefHeight="32.0" prefWidth="169.0" text="Send A Message To Attendee" />
+      <Button layoutX="253.0" layoutY="200.0" mnemonicParsing="false" text="Send Message" />
+   </children>
+</AnchorPane>
