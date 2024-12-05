@@ -3,10 +3,11 @@ package com.example.finalprojectbookfair;
 import java.time.LocalDate;
 
 public class UserClass {
-    String UserName,Password,Gender,Designation;
+    String id, UserName,Password,Gender,Designation;
     LocalDate dob;
 
-    public UserClass(String userName, String password, String gender, String designation, LocalDate dob) {
+    public UserClass(String id, String userName, String password, String gender, String designation, LocalDate dob) {
+        this.id = id;
         UserName = userName;
         Password = password;
         Gender = gender;
@@ -14,12 +15,12 @@ public class UserClass {
         this.dob = dob;
     }
 
-    public String getGender() {
-        return Gender;
+    public String getId() {
+        return id;
     }
 
-    public void setGender(String gender) {
-        Gender = gender;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getUserName() {
@@ -28,6 +29,14 @@ public class UserClass {
 
     public void setUserName(String userName) {
         UserName = userName;
+    }
+
+    public String getGender() {
+        return Gender;
+    }
+
+    public void setGender(String gender) {
+        Gender = gender;
     }
 
     public String getPassword() {
@@ -54,4 +63,32 @@ public class UserClass {
         this.dob = dob;
     }
 
+    @Override
+    public String toString() {
+        return "UserClass{" +
+                "id='" + id + '\'' +
+                ", UserName='" + UserName + '\'' +
+                ", Password='" + Password + '\'' +
+                ", Gender='" + Gender + '\'' +
+                ", Designation='" + Designation + '\'' +
+                ", dob=" + dob +
+                '}';
+    }
+
+    public String generateID(){
+        String id = "";
+        id+= this.Designation.substring(0,3);
+        id+=this.Password.substring(this.getPassword().length());
+        return id;
+
+
+
+    }
+    public boolean loginVR(String id, String password){
+        if(this.getId()==id && this.getPassword()==password){
+            return true;
+        }
+        return  false;
+
+    }
 }
