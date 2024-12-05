@@ -88,7 +88,12 @@ public class UserClass {
         if(this.getId()==id && this.getPassword()==password){
             return true;
         }
-        return  false;
+        else{
+            return false;
+
+        }
+
+
 
     }
 }
