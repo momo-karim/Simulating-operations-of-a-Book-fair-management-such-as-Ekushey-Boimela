@@ -1,13 +1,13 @@
 package com.example.finalprojectbookfair;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.time.LocalDate;
 
-public class UserRoleManagementControleler
-{
+public class UserRoleManagementControleler {
     @javafx.fxml.FXML
     private TableColumn<UserClass, LocalDate> dobTableColumn;
     @javafx.fxml.FXML
@@ -30,6 +30,13 @@ public class UserRoleManagementControleler
     private TableView <UserClass>userInformationTableView;
     @javafx.fxml.FXML
     private Label messageLabel;
+    private ObservableList <UserClass> userlist;
+
+    public UserRoleManagementControleler(ObservableList<UserClass> userlist) {
+        this.userlist = userlist;
+        userInformationTableView.setItems(userlist);
+
+    }
 
     @javafx.fxml.FXML
     public void initialize() {
@@ -40,6 +47,9 @@ public class UserRoleManagementControleler
         idTableColumn.setCellValueFactory(new PropertyValueFactory<>("Id"));
         dobTableColumn.setCellValueFactory(new PropertyValueFactory<>("Date of Birth"));
         passswordTableColumn.setCellValueFactory(new PropertyValueFactory<>("Password"));
+        selectRoleComboBox.getItems().addAll("Admin","Logistics");
+        useridField.getId();
+
 
 
 

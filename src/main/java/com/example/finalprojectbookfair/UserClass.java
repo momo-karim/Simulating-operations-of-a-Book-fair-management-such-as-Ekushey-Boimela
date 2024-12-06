@@ -3,8 +3,8 @@ package com.example.finalprojectbookfair;
 import java.time.LocalDate;
 
 public class UserClass {
-    String id, UserName,Password,Gender,Designation;
-    LocalDate dob;
+    private String id, UserName,Password,Gender,Designation;
+    private LocalDate dob;
 
     public UserClass(String id, String userName, String password, String gender, String designation, LocalDate dob) {
         this.id=this.generateID();
