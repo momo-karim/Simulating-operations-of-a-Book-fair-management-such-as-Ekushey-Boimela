@@ -36,6 +36,7 @@ public class Signincontroller {
     public void onSignInButtonClick(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent,"hello-view.fxml");
 
+
         String Name= userNameField.getText();
         String Password= passwordFiled.getText();
         String Gender =genderCombobox.getSelectionModel().getSelectedItem();
@@ -43,6 +44,8 @@ public class Signincontroller {
         LocalDate dob = datepicker.getValue();
         UserClass newuser= new UserClass("id",Name, Password,Gender,designation,dob);
         userlist.add(newuser);
+
+
 
 
 

@@ -75,10 +75,20 @@ public class UserClass {
                 '}';
     }
 
-    public String generateID(){
+    public String generateID(String type){
         String id = "";
-        id+= this.Designation.substring(0,3);
-        id+=this.Password.substring(this.getPassword().length());
+        if (type == "admin"){
+            id+= this.Designation.substring(0,3);
+            id+=this.Password.substring(this.getPassword().length());
+        } else if (type == "Logistics") {
+            id+= this.Designation.substring(0,3);
+            id+=this.Password.substring(this.getPassword().length());
+
+
+
+
+        }
+
         return id;
 
 

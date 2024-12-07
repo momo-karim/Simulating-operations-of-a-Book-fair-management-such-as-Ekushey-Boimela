@@ -9,6 +9,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class AdminDashboardController {
+
+    public void setter (admin user)
+        this.UserClass=
+
+
     @Deprecated
     public void onExibitorApplication(ActionEvent actionEvent) {
     }
@@ -19,7 +24,8 @@ public class AdminDashboardController {
     }
 
     @javafx.fxml.FXML
-    public void manageUserRoleOnAction(ActionEvent actionEvent) {
+    public void manageUserRoleOnAction(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent,"finalprojectbookfair/userManagerAnDinfo.fxml");
     }
 
     @javafx.fxml.FXML

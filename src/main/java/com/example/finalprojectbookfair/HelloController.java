@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -12,6 +13,9 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Objects;
 
 public class HelloController {
 
@@ -27,12 +31,46 @@ public class HelloController {
     private Button lohinbutton;
     @FXML
     private Label messageLabel;
+    ArrayList<admin> adminArrayList=new ArrayList<>();
+    ArrayList<Logistics>logisticsArrayList=new ArrayList<>();
+    @FXML
+    public void initialize(){
+        admin Admin =new admin("Id","admin","asdw","male","admin", LocalDate.now());
+        adminArrayList.add(Admin);
+        System.out.println(Admin);
+
+    }
+
+
+
 
 
 
     @FXML
     public void onLoginButton(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
+        String id, password;
+        id=userIdTextField.getText();
+        password= passwordTextField.getText();
+        if (Objects.equals(id,"admin")){
+            for (admin Admin: adminArrayList){
+                if (Admin.loginVR(id,password)){
+                    Parent root =null;
+                    AdminDashboardController ADC=SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
+                    ADC.
+                }
+
+
+
+            }
+        }
+
+
+        //SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
+        //data passing
+        //HelloController hc= fxmlLoader.getController();
+        //hc.setStudList(Studlist);
+
+
     }
 
     @FXML
