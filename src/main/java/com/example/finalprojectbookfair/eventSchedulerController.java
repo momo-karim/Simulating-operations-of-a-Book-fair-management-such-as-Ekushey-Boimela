@@ -3,6 +3,8 @@ package com.example.finalprojectbookfair;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 
+import java.io.IOException;
+
 public class eventSchedulerController {
     @javafx.fxml.FXML
     private Label massageLabel;
@@ -12,7 +14,8 @@ public class eventSchedulerController {
     }
 
     @javafx.fxml.FXML
-    public void onBackWordButtonOnClick(ActionEvent actionEvent) {
+    public void onBackWordButtonOnClick(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent, "adminDashboard.fxml");
     }
 
     @javafx.fxml.FXML

@@ -5,5 +5,6 @@ module com.example.finalprojectbookfair {
 
     opens com.example.finalprojectbookfair to javafx.fxml;
 
+
     exports com.example.finalprojectbookfair;
 }

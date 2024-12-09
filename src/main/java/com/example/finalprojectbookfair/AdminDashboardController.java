@@ -7,11 +7,11 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class AdminDashboardController {
 
-    public void setter (admin user)
-        this.UserClass=
+
 
 
     @Deprecated
@@ -25,7 +25,8 @@ public class AdminDashboardController {
 
     @javafx.fxml.FXML
     public void manageUserRoleOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"finalprojectbookfair/userManagerAnDinfo.fxml");
+        SceneSwitcher.switchScene(actionEvent,"UserManagement.fxml");
+
     }
 
     @javafx.fxml.FXML
@@ -35,6 +36,7 @@ public class AdminDashboardController {
 
     @javafx.fxml.FXML
     public void scheduledEventOnACtion(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
@@ -55,5 +57,11 @@ public class AdminDashboardController {
 
     @javafx.fxml.FXML
     public void exibitorApplicationAction(ActionEvent actionEvent) {
+    }
+    @javafx.fxml.FXML
+    ArrayList<admin>ArrayList= new ArrayList<>();
+
+    public void setArrayList(ArrayList<admin> adminArrayList) {
+        this.ArrayList = adminArrayList;
     }
 }

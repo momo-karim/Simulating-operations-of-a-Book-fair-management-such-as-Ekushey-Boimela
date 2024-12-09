@@ -15,7 +15,8 @@
       <Text layoutX="222.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage User Role">
          <font>
             <Font size="33.0" />
-         </font></Text>
+         </font>
+      </Text>
       <Button layoutX="3.0" layoutY="14.0" mnemonicParsing="false" onAction="#backbuttonOnClick" text="&lt;" />
       <TableView fx:id="userInformationTableView" layoutX="27.0" layoutY="163.0" prefHeight="182.0" prefWidth="657.0">
          <columns>
@@ -31,7 +32,8 @@
       <Label layoutX="293.0" layoutY="131.0" text="User Informations">
          <font>
             <Font size="16.0" />
-         </font></Label>
+         </font>
+      </Label>
       <Button layoutX="627.0" layoutY="486.0" mnemonicParsing="false" onAction="#logOutbuttonclick" text="Log out" />
       <Label fx:id="messageLabel" layoutX="86.0" layoutY="210.0" />
       <TextField fx:id="useridField" layoutX="94.0" layoutY="354.0" prefHeight="25.0" prefWidth="107.0" />

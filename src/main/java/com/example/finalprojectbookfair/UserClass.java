@@ -7,7 +7,7 @@ public class UserClass {
     private LocalDate dob;
 
     public UserClass(String id, String userName, String password, String gender, String designation, LocalDate dob) {
-        this.id=this.generateID();
+        this.id=this.generateID("type");
         UserName = userName;
         Password = password;
         Gender = gender;

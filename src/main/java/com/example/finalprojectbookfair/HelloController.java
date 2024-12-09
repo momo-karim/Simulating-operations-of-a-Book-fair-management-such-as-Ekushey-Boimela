@@ -1,5 +1,6 @@
 package com.example.finalprojectbookfair;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -33,6 +34,11 @@ public class HelloController {
     private Label messageLabel;
     ArrayList<admin> adminArrayList=new ArrayList<>();
     ArrayList<Logistics>logisticsArrayList=new ArrayList<>();
+
+    public void setAdminArrayList(ArrayList<admin> adminArrayList) {
+        this.adminArrayList = adminArrayList;
+    }
+
     @FXML
     public void initialize(){
         admin Admin =new admin("Id","admin","asdw","male","admin", LocalDate.now());
@@ -46,23 +52,14 @@ public class HelloController {
 
 
 
+
     @FXML
     public void onLoginButton(ActionEvent actionEvent) throws IOException {
-        String id, password;
-        id=userIdTextField.getText();
-        password= passwordTextField.getText();
-        if (Objects.equals(id,"admin")){
-            for (admin Admin: adminArrayList){
-                if (Admin.loginVR(id,password)){
-                    Parent root =null;
-                    AdminDashboardController ADC=SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
-                    ADC.
-                }
+
+        AdminDashboardController ADC=SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
+        ADC.setArrayList(adminArrayList);
 
 
-
-            }
-        }
 
 
         //SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");

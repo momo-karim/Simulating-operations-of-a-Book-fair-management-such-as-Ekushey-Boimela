@@ -10,6 +10,7 @@ import javafx.scene.control.TextField;
 
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Signincontroller {
     @javafx.fxml.FXML
@@ -21,9 +22,17 @@ public class Signincontroller {
     @javafx.fxml.FXML
     private ComboBox <String>genderCombobox;
     private ObservableList<UserClass>  userlist= FXCollections.observableArrayList();
-    @javafx.fxml.FXML
-    private DatePicker datepicker;
 
+
+
+    @javafx.fxml.FXML
+
+    private DatePicker datepicker;
+    ArrayList<UserClass> TheUser= new ArrayList<>();
+
+    public void setUser(ArrayList<UserClass> user) {
+        this.TheUser = user;
+    }
 
     @javafx.fxml.FXML
     public void initialize(){
@@ -34,9 +43,6 @@ public class Signincontroller {
 
     @javafx.fxml.FXML
     public void onSignInButtonClick(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"hello-view.fxml");
-
-
         String Name= userNameField.getText();
         String Password= passwordFiled.getText();
         String Gender =genderCombobox.getSelectionModel().getSelectedItem();
@@ -44,6 +50,15 @@ public class Signincontroller {
         LocalDate dob = datepicker.getValue();
         UserClass newuser= new UserClass("id",Name, Password,Gender,designation,dob);
         userlist.add(newuser);
+        SceneSwitcher.switchScene(actionEvent,"hello-view.fxml");
+
+
+
+
+
+
+
+
 
 
 
