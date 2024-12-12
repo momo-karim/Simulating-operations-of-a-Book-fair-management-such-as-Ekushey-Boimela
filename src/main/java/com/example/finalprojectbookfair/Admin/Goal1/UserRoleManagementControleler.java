@@ -1,4 +1,4 @@
-package com.example.finalprojectbookfair.Admin;
+package com.example.finalprojectbookfair.Admin.Goal1;
 
 import com.example.finalprojectbookfair.UserClass;
 import javafx.collections.ObservableList;

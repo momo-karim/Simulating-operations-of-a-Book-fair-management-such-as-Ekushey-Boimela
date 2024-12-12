@@ -11,4 +11,6 @@ module com.example.finalprojectbookfair {
     opens com.example.finalprojectbookfair.Admin to javafx.fxml;
     exports com.example.finalprojectbookfair.Logistics;
     opens com.example.finalprojectbookfair.Logistics to javafx.fxml;
+    exports com.example.finalprojectbookfair.Admin.Goal1;
+    opens com.example.finalprojectbookfair.Admin.Goal1 to javafx.fxml;
 }
