@@ -1,15 +1,20 @@
-package com.example.finalprojectbookfair;
+package com.example.finalprojectbookfair.Admin;
 
+import com.example.finalprojectbookfair.HelloController;
+import com.example.finalprojectbookfair.SceneSwitcher;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
-public class AdminDashboardController {
+public class AdminDashboardControllergotcurrepted {
+    //public void setter()throws IOException{}
+    admin Admin;
+    public void setter(admin Admin) {
+        this.Admin = Admin;
+    }
+
 
 
 
@@ -25,7 +30,14 @@ public class AdminDashboardController {
 
     @javafx.fxml.FXML
     public void manageUserRoleOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"UserManagement.fxml");
+        FXMLLoader fxmlLoader=new FXMLLoader((getClass().getResource("/com/example/finalprojectbookfair/Admin/UserManagement.fxml")));
+        Node node= fxmlLoader.load();
+        HelloController hc= fxmlLoader.getController();
+        hc.setter(Admin);
+
+
+        // SceneSwitcher.switchScene(actionEvent,"/com/example/finalprojectbookfair/UserManagement.fxml");
+
 
     }
 
@@ -58,10 +70,5 @@ public class AdminDashboardController {
     @javafx.fxml.FXML
     public void exibitorApplicationAction(ActionEvent actionEvent) {
     }
-    @javafx.fxml.FXML
-    ArrayList<admin>ArrayList= new ArrayList<>();
 
-    public void setArrayList(ArrayList<admin> adminArrayList) {
-        this.ArrayList = adminArrayList;
-    }
 }

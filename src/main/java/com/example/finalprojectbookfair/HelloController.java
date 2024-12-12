@@ -1,22 +1,18 @@
 package com.example.finalprojectbookfair;
 
-import javafx.collections.ObservableList;
+import com.example.finalprojectbookfair.Admin.AdminDashboardControllergotcurrepted;
+import com.example.finalprojectbookfair.Admin.admin;
+import com.example.finalprojectbookfair.Logistics.Logistics;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class HelloController {
 
@@ -56,8 +52,8 @@ public class HelloController {
     @FXML
     public void onLoginButton(ActionEvent actionEvent) throws IOException {
 
-        AdminDashboardController ADC=SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
-        ADC.setArrayList(adminArrayList);
+        AdminDashboardControllergotcurrepted ADC=SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
+
 
 
 
@@ -80,6 +76,10 @@ public class HelloController {
     @FXML
     public void onSignUp(ActionEvent actionEvent) throws IOException {
         SceneSwitcher.switchScene(actionEvent,"signin.fxml");
+
+    }
+
+    public void setter(admin admin) {
 
     }
 }

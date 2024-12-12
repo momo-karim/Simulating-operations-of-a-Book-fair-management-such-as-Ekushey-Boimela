@@ -1,8 +1,10 @@
-package com.example.finalprojectbookfair;
+package com.example.finalprojectbookfair.Admin;
+
+import com.example.finalprojectbookfair.UserClass;
 
 import java.time.LocalDate;
 
-public class verifiedUsers extends UserClass{
+public class verifiedUsers extends UserClass {
     private String PhoneNumber,Email;
 
     public verifiedUsers(String id, String userName, String password, String gender, String designation, LocalDate dob, String PhoneNumber, String Email ) {

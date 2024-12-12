@@ -4,7 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectbookfair.eventSchedulerController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectbookfair.Admin.eventSchedulerController">
    <children>
       <Text layoutX="3.0" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Event Proposal Module" />
       <TableView layoutX="32.0" layoutY="45.0" prefHeight="200.0" prefWidth="399.0">

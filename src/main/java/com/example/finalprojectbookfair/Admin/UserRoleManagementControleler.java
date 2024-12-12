@@ -1,5 +1,6 @@
-package com.example.finalprojectbookfair;
+package com.example.finalprojectbookfair.Admin;
 
+import com.example.finalprojectbookfair.UserClass;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;

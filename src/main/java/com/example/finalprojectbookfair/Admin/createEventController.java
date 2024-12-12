@@ -1,4 +1,4 @@
-package com.example.finalprojectbookfair;
+package com.example.finalprojectbookfair.Admin;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
