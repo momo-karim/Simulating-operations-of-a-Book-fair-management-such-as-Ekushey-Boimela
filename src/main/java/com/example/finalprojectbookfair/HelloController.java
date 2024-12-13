@@ -30,10 +30,12 @@ public class HelloController {
     private Label messageLabel;
     ArrayList<admin> adminArrayList=new ArrayList<>();
     ArrayList<Logistics>logisticsArrayList=new ArrayList<>();
+    private ArrayList<UserClass> TheUser;
 
-    public void setAdminArrayList(ArrayList<admin> adminArrayList) {
-        this.adminArrayList = adminArrayList;
-    }
+
+//    public void setAdminArrayList(ArrayList<admin> adminArrayList) {
+//        this.adminArrayList = adminArrayList;
+//    }
 
     @FXML
     public void initialize(){
@@ -95,16 +97,22 @@ public class HelloController {
 
     @FXML
     public void onForgetPassword(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"resetpassword.fxml");
+//        SceneSwitcher.switchScene(actionEvent,"resetpassword.fxml");
+        SceneSwitcher.switchSceneWithData(actionEvent, "resetpassword.fxml", this.TheUser);
     }
 
     @FXML
     public void onSignUp(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"signin.fxml");
+//        SceneSwitcher.switchScene(actionEvent,"signin.fxml");
+        SceneSwitcher.switchSceneWithData(actionEvent,"signin.fxml" , this.TheUser);
 
     }
 
     public void setter(admin admin) {
+
+    }
+
+    public void setUserList(ArrayList<UserClass> userList) {
 
     }
 }

@@ -25,10 +25,11 @@ public class Signincontroller {
 
 
 
+
     @javafx.fxml.FXML
 
     private DatePicker datepicker;
-    ArrayList<UserClass> TheUser= new ArrayList<>();
+    private ArrayList<UserClass> TheUser= new ArrayList<>();
 
     public void setUser(ArrayList<UserClass> user) {
         this.TheUser = user;
@@ -38,6 +39,8 @@ public class Signincontroller {
     public void initialize(){
         genderCombobox.getItems().addAll("Male","female","Others");
         designationCombobox.getItems().addAll("Admin","Logistics");
+        TheUser=new ArrayList<>();
+
 
     }
 
@@ -72,7 +75,8 @@ public class Signincontroller {
         TheUser.add(newUser);
         userlist.add(newUser);
         System.out.println("User signed in successfully: " + newUser);
-        SceneSwitcher.switchScene(actionEvent, "hello-view.fxml");
+        //SceneSwitcher.switchScene(actionEvent, "hello-view.fxml");
+        SceneSwitcher.switchSceneWithData(actionEvent, "hello-view.fxml", this.TheUser);
 
 
 
