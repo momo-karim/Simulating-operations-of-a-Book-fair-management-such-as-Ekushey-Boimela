@@ -43,7 +43,7 @@ public class AdminDashboardControllergotcurrepted {
 
     @javafx.fxml.FXML
     public void eventProposalModuleOnAction(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"eventScheduler.fxml");
+        SceneSwitcher.switchScene(actionEvent,"ScheduledEvent.fxml");
     }
 
     @javafx.fxml.FXML

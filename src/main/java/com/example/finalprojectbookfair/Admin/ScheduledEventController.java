@@ -6,7 +6,7 @@ import javafx.scene.control.Label;
 
 import java.io.IOException;
 
-public class eventSchedulerController {
+public class ScheduledEventController {
     @javafx.fxml.FXML
     private Label massageLabel;
 

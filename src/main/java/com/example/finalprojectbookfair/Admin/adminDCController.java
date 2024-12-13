@@ -28,7 +28,7 @@ public class adminDCController {
 
     @javafx.fxml.FXML
     public void scheduledEventOnACtion(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"eventScheduler.fxml");
+        SceneSwitcher.switchScene(actionEvent,"ScheduledEvent.fxml");
     }
 
     @javafx.fxml.FXML
