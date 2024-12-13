@@ -30,7 +30,7 @@ public class AdminDashboardControllergotcurrepted {
 
     @javafx.fxml.FXML
     public void manageUserRoleOnAction(ActionEvent actionEvent) throws IOException {
-        FXMLLoader fxmlLoader=new FXMLLoader((getClass().getResource("/com/example/finalprojectbookfair/Admin/UserManagement.fxml")));
+        FXMLLoader fxmlLoader=new FXMLLoader((getClass().getResource("/com/example/finalprojectbookfair/Admin/Goal1/UserManagement.fxml")));
         Node node= fxmlLoader.load();
         HelloController hc= fxmlLoader.getController();
         hc.setter(Admin);

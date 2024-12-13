@@ -20,6 +20,7 @@ public class SceneSwitcher {
 
         return fxmlLoader.getController();
 
+
     }
 
 }

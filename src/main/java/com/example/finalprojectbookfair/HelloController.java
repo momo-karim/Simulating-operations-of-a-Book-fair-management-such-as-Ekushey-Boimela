@@ -52,7 +52,7 @@ public class HelloController {
     @FXML
     public void onLoginButton(ActionEvent actionEvent) throws IOException {
 
-        AdminDashboardControllergotcurrepted ADC=SceneSwitcher.switchScene(actionEvent,"adminDashboard.fxml");
+        AdminDashboardControllergotcurrepted ADC=SceneSwitcher.switchScene(actionEvent,"/com.example.finalprojectbookfair/admin/adminDashboard.fxml");
 
 
 

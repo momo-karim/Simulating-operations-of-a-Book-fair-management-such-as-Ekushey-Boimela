@@ -15,7 +15,9 @@ public class HelloApplication extends Application {
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
+        System.out.println(getClass().getResource("com/example/finalprojectbookfair/Admin/adminDashboard.fxml"));
     }
+
 
     public static void main(String[] args) {
         launch();
