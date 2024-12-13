@@ -3,11 +3,11 @@ package com.example.finalprojectbookfair;
 import java.time.LocalDate;
 
 public class UserClass {
-    private String id, UserName,Password,Gender,Designation;
+    private String id, UserName, Password, Gender, Designation;
     private LocalDate dob;
 
     public UserClass(String id, String userName, String password, String gender, String designation, LocalDate dob) {
-        this.id=this.generateID("type");
+        this.id = id;
         UserName = userName;
         Password = password;
         Gender = gender;
@@ -74,36 +74,35 @@ public class UserClass {
                 ", dob=" + dob +
                 '}';
     }
-
-    public String generateID(String type){
-        String id = "";
-        if (type == "admin"){
-            id+= this.Designation.substring(0,3);
-            id+=this.Password.substring(this.getPassword().length());
-        } else if (type == "Logistics") {
-            id+= this.Designation.substring(0,3);
-            id+=this.Password.substring(this.getPassword().length());
-
-
-
-
-        }
-
-        return id;
-
-
-
-    }
-    public boolean loginVR(String id, String password){
-        if(this.getId()==id && this.getPassword()==password){
-            return true;
-        }
-        else{
-            return false;
-
-        }
-
-
-
-    }
 }
+
+//    public String generateID(String type){
+//        String id = "";
+//        if (type == "admin"){
+//            id+= this.Designation.substring(0,3);
+//            id+=this.Password.substring(this.getPassword().length());
+//        } else if (type == "Logistics") {
+//            id+= this.Designation.substring(0,3);
+//            id+=this.Password.substring(this.getPassword().length());
+//
+//
+//
+//
+//        }
+//
+//        return id;
+
+
+
+//    }
+//    public boolean loginVR(String id, String password){
+//        if(this.getId()==id && this.getPassword()==password){
+//            return true;
+//        }
+//        else{
+//            return false;
+//
+//        }
+
+
+

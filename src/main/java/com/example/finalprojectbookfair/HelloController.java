@@ -37,10 +37,10 @@ public class HelloController {
 
     @FXML
     public void initialize(){
-        admin Admin =new admin("Id","admin","asdw","male","admin", LocalDate.now());
-        adminArrayList.add(Admin);
-        System.out.println(Admin);
+        adminArrayList.add(new admin("admin1", "admin", "admin123", "Male", "Admin", LocalDate.now()));
+        logisticsArrayList.add(new Logistics("log1", "logistics", "log123", "Male", "Logistics", LocalDate.now()));
 
+        System.out.println("Sample users initialized.");
     }
 
 
@@ -51,8 +51,33 @@ public class HelloController {
 
     @FXML
     public void onLoginButton(ActionEvent actionEvent) throws IOException {
+        String userId = userIdTextField.getText();
+        String password = passwordTextField.getText();
 
-        AdminDashboardControllergotcurrepted ADC=SceneSwitcher.switchScene(actionEvent,"/com.example.finalprojectbookfair/admin/adminDashboard.fxml");
+        if (userId.isEmpty() || password.isEmpty()) {
+            messageLabel.setText("Please enter both User ID and Password.");
+            return;
+        }
+        for (admin admin : adminArrayList) {
+            if (admin.getId().equals(userId) && admin.getPassword().equals(password)) {
+                messageLabel.setText("Login successful! Redirecting to Admin Dashboard...");
+                AdminDashboardControllergotcurrepted ADC = SceneSwitcher.switchScene(actionEvent, "/com.example.finalprojectbookfair/admin/adminDashboard.fxml");
+                return;
+            }
+        }
+
+
+        for (Logistics logistics : logisticsArrayList) {
+            if (logistics.getId().equals(userId) && logistics.getPassword().equals(password)) {
+                messageLabel.setText("Login successful! Redirecting to Logistics Dashboard...");
+                SceneSwitcher.switchScene(actionEvent, "/com.example.finalprojectbookfair/logistics/logisticsDashboard.fxml");
+                return;
+            }
+        }
+        messageLabel.setText("Invalid User ID or Password. Please try again.");
+
+
+        //AdminDashboardControllergotcurrepted ADC=SceneSwitcher.switchScene(actionEvent,"/com.example.finalprojectbookfair/admin/adminDashboard.fxml");
 
 
 

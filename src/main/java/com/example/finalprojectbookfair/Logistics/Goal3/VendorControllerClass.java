@@ -25,8 +25,7 @@ public class VendorControllerClass {
         VendorTCV.setItems(getVendorList);
     }
     private ObservableList<VendorMC> getVendorList;{
-        return FXCollections.observableArrayList(
-                new VendorMC("Electronics","***","Ok"));
+
     }
 
 

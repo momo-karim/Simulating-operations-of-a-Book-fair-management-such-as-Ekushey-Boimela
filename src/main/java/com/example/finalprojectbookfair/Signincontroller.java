@@ -48,17 +48,31 @@ public class Signincontroller {
         String Gender =genderCombobox.getSelectionModel().getSelectedItem();
         String designation =designationCombobox.getSelectionModel().getSelectedItem();
         LocalDate dob = datepicker.getValue();
-        UserClass newuser= new UserClass("id",Name, Password,Gender,designation,dob);
-        userlist.add(newuser);
-        SceneSwitcher.switchScene(actionEvent,"hello-view.fxml");
+
+        //UserClass newuser= new UserClass("id",Name, Password,Gender,designation,dob);
+        //userlist.add(newuser);
+        //SceneSwitcher.switchScene(actionEvent,"hello-view.fxml");
+
+        if (Name.isEmpty() || Password.isEmpty() || Gender == null || designation == null || dob == null) {
+            System.out.println("All fields are required.");
+            return;
+        }
+        for (UserClass user : TheUser) {
+            if (user.getUserName().equals(Name)) {
+                System.out.println("Username already exists. Please choose a different username.");
+                return;
+            }
+        }
 
 
+        String userId = "USR" + (TheUser.size() + 1);
 
 
-
-
-
-
+        UserClass newUser = new UserClass(userId, Name, Password, Gender, designation, dob);
+        TheUser.add(newUser);
+        userlist.add(newUser);
+        System.out.println("User signed in successfully: " + newUser);
+        SceneSwitcher.switchScene(actionEvent, "hello-view.fxml");
 
 
 
