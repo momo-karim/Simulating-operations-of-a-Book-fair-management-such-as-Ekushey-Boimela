@@ -54,7 +54,7 @@ public class  eventSchedule {
 
     @FXML
     public void backButtonOnClick(ActionEvent actionEvent) throws IOException {
-        SceneSwitcher.switchScene(actionEvent,"hello-view.fxml");
+        SceneSwitcher.switchScene(actionEvent,"LogisticDashboard.fxml");
     }
 }
 
