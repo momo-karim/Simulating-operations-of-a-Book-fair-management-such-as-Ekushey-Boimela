@@ -63,7 +63,7 @@ public class HelloController {
         for (admin admin : adminArrayList) {
             if (admin.getId().equals(userId) && admin.getPassword().equals(password)) {
                 messageLabel.setText("Login successful! Redirecting to Admin Dashboard...");
-                AdminDashboardControllergotcurrepted ADC = SceneSwitcher.switchScene(actionEvent, "/com.example.finalprojectbookfair/admin/adminDashboard.fxml");
+                AdminDashboardControllergotcurrepted ADC = SceneSwitcher.switchScene(actionEvent, "/com.example.finalprojectbookfair/Admin/adminDashboard.fxml");
                 return;
             }
         }
@@ -72,7 +72,7 @@ public class HelloController {
         for (Logistics logistics : logisticsArrayList) {
             if (logistics.getId().equals(userId) && logistics.getPassword().equals(password)) {
                 messageLabel.setText("Login successful! Redirecting to Logistics Dashboard...");
-                SceneSwitcher.switchScene(actionEvent, "/com.example.finalprojectbookfair/logistics/logisticsDashboard.fxml");
+                SceneSwitcher.switchScene(actionEvent, "/com.example.finalprojectbookfair/Logistics/LogisticsDashboard.fxml");
                 return;
             }
         }
