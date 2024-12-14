@@ -25,7 +25,7 @@ public class SceneSwitcher {
         FXMLLoader loader = new FXMLLoader(SceneSwitcher.class.getResource(fxmlFile));
         Parent root = loader.load();
 
-        // Dynamically check the controller type
+
         Object controller = loader.getController();
 
         if (controller instanceof HelloController) {
