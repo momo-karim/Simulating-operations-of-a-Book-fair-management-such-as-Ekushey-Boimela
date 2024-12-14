@@ -58,6 +58,14 @@ public class  ScheduledEventController {
     @FXML
     public void aproveOnAction(ActionEvent actionEvent) {
         Event selectedEvent = EventTC.getSelectionModel().getSelectedItem();
+        if (selectedEvent != null) {
+            events.remove(selectedEvent);
+            massageLabel.setText("Event \"" + selectedEvent.getName() + "\" has been approved successfully!");
+
+        } else {
+            // No event selected; display an error message
+            massageLabel.setText("Please select an event to approve.");
+        }
     }
 
     @FXML

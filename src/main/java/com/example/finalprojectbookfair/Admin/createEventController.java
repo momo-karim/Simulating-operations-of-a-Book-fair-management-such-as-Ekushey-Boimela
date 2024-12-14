@@ -11,7 +11,8 @@ public class  createEventController {
     private Label messsageLabel;
 
     @javafx.fxml.FXML
-    public void onBackWordButtonOnClick(ActionEvent actionEvent) {
+    public void onBackWordButtonOnClick(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent, "login.fxml");
     }
 
     @javafx.fxml.FXML
