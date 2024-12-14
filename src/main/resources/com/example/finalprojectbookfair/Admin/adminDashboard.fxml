@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="351.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectbookfair.Admin.AdminDashboardControllergotcurrepted">
+   <children>
+      <Text layoutX="230.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DashBoard">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Text>
+      <Text layoutX="282.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" />
+      <Button layoutX="525.0" layoutY="312.0" mnemonicParsing="false" onAction="#onLogOut" text="Logout" />
+      <VBox layoutX="10.0" layoutY="10.0" prefHeight="340.0" prefWidth="139.0">
+         <children >
+            <Button mnemonicParsing="false" onAction="#manageUserRoleOnAction" prefHeight="51.0" prefWidth="138.0" text="Manage User Role" />
+            <Button mnemonicParsing="false" onAction="#exibitorApplicationAction" prefHeight="47.0" prefWidth="139.0" text="Exibitor Application" />
+            <Button mnemonicParsing="false" onAction="#eventProposalModuleOnAction" prefHeight="46.0" prefWidth="139.0" text="Event Proposal Module" />
+            <Button mnemonicParsing="false" onAction="#scheduledEventOnACtion" prefHeight="43.0" prefWidth="139.0" text=" Scheduled Event " />
+            <Button mnemonicParsing="false" onAction="#generateReportsOnAction" prefHeight="49.0" prefWidth="139.0" text="Generate Reports" />
+            <Button mnemonicParsing="false" onAction="#boothAllocationOnAction" prefHeight="35.0" prefWidth="139.0" text="Booth Allocation" />
+            <Button mnemonicParsing="false" onAction="#complaintsOnAction" prefHeight="34.0" prefWidth="139.0" text="Complaints" />
+            <Button mnemonicParsing="false" onAction="#monitoringONAction" prefHeight="25.0" prefWidth="197.0" text="Monitoring" />
+         </children>
+      </VBox>
+      <BorderPane layoutX="269.0" layoutY="-262.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

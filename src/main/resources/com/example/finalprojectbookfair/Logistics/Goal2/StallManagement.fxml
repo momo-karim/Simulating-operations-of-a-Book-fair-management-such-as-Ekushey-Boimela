@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectbookfair.Logistics.Goal2.BoothAndStallManagementController">
+   <children >
+      <TableView layoutX="27.0" layoutY="51.0" prefHeight="184.0" prefWidth="307.0">
+         <columns>
+            <TableColumn prefWidth="101.0" text="Boooth Location" />
+            <TableColumn prefWidth="98.0" text="Exhibitor Name" />
+            <TableColumn prefWidth="103.0" text="Booth Size" />
+         </columns>
+      </TableView>
+      <Text layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stall  Information" />
+      <Button layoutX="2.0" layoutY="17.0" mnemonicParsing="false" text="&lt;" />
+      <Line endX="-100.0" endY="-153.0" layoutX="443.0" layoutY="178.0" startX="-100.0" startY="189.0" />
+      <Button layoutX="46.0" layoutY="257.0" mnemonicParsing="false" text="Sort By Size" />
+      <Label layoutX="57.0" layoutY="291.0" text="Backwords" />
+      <Button layoutX="527.0" layoutY="355.0" mnemonicParsing="false" text="Log Out" />
+      <Label fx:id="messageLabel" layoutX="57.0" layoutY="327.0" />
+      <Label layoutX="355.0" layoutY="51.0" text="Booth location" />
+      <TextField layoutX="437.0" layoutY="47.0" />
+      <Label layoutX="355.0" layoutY="82.0" text="Exhibitor Name" />
+      <TextField layoutX="437.0" layoutY="78.0" />
+      <Label layoutX="357.0" layoutY="126.0" text="Booth Size" />
+      <RadioButton layoutX="437.0" layoutY="126.0" mnemonicParsing="false" text="Small">
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton layoutX="437.0" layoutY="152.0" mnemonicParsing="false" text="medium" toggleGroup="$tg" />
+      <RadioButton layoutX="437.0" layoutY="179.0" mnemonicParsing="false" text="Large" toggleGroup="$tg" />
+      <Button layoutX="392.0" layoutY="223.0" mnemonicParsing="false" text="Submit booth Information" />
+   </children>
+</AnchorPane>

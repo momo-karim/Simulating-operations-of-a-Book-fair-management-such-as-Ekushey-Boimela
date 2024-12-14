@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="535.0" prefWidth="749.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectbookfair.Admin.Goal1.UserRoleManagementControleler">
+   <children >
+      <Text layoutX="222.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage User Role">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+      <Button layoutX="3.0" layoutY="14.0" mnemonicParsing="false" onAction="#backbuttonOnClick" text="&lt;" />
+      <TableView fx:id="userInformationTableView" layoutX="27.0" layoutY="163.0" prefHeight="182.0" prefWidth="644.0">
+         <columns>
+            <TableColumn fx:id="nameTableColumn" prefWidth="111.0" text="Name" />
+            <TableColumn fx:id="emailTableColumn" prefWidth="146.0" text="Email" />
+            <TableColumn fx:id="designationTableColumn" prefWidth="76.0" text="Designation" />
+            <TableColumn fx:id="genderTableColumn" prefWidth="67.0" text="Gender" />
+            <TableColumn fx:id="dobTableColumn" prefWidth="101.0" text="Date of Birth" />
+            <TableColumn fx:id="PNTableColumn" prefWidth="128.0" text="Phone Number" />
+         </columns>
+      </TableView>
+      <Label layoutX="293.0" layoutY="131.0" text="User Informations">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button layoutX="627.0" layoutY="486.0" mnemonicParsing="false" onAction="#logOutbuttonclick" text="Log out" />
+      <Label fx:id="messageLabel" layoutX="86.0" layoutY="210.0" />
+      <Label layoutX="28.0" layoutY="358.0" text="Designation" />
+      <ComboBox fx:id="designationComboBox" layoutX="106.0" layoutY="354.0" prefHeight="25.0" prefWidth="107.0" />
+      <Button layoutX="409.0" layoutY="444.0" mnemonicParsing="false" onAction="#assignOnActionButton" text="Assign User" />
+      <Button layoutX="293.0" layoutY="444.0" mnemonicParsing="false" onAction="#deleteOnActionButton" text="Delete User" />
+      <Label layoutX="246.0" layoutY="358.0" text="Emali" />
+      <TextField fx:id="emailTextField" layoutX="281.0" layoutY="354.0" />
+      <RadioButton fx:id="maleRB" layoutX="293.0" layoutY="399.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="femaleRB" layoutX="356.0" layoutY="399.0" mnemonicParsing="false" text="Female" toggleGroup="$tg" />
+      <Label layoutX="241.0" layoutY="399.0" text="Gender" />
+      <Label layoutX="459.0" layoutY="358.0" text="Name" />
+      <TextField fx:id="nameField" layoutX="507.0" layoutY="354.0" />
+      <Label layoutX="448.0" layoutY="399.0" text="Phone Number" />
+      <TextField fx:id="PNfield" layoutX="535.0" layoutY="395.0" />
+      <DatePicker fx:id="dobDP" layoutX="103.0" layoutY="396.0" prefHeight="25.0" prefWidth="114.0" />
+      <Label layoutX="26.0" layoutY="399.0" text="Date of birth" />
+   </children>
+</AnchorPane>

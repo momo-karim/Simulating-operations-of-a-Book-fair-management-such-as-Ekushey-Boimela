@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User 2(Logistics).MakeATransportationRequests">
+   <children >
+      <DatePicker fx:id="deliveryDateDP" layoutX="103.0" layoutY="59.0" promptText="Delivery Date" />
+      <TextField fx:id="pickUpLoactionField" layoutX="103.0" layoutY="107.0" text="Pickup Location" />
+      <TextField fx:id="DropoffLocationField" layoutX="103.0" layoutY="143.0" text="Drop-off Location" />
+      <ComboBox fx:id="deliveryItemsComboBox" layoutX="103.0" layoutY="188.0" prefWidth="150.0" promptText="Delivery Items" />
+      <TextField fx:id="vendorNameField" layoutX="104.0" layoutY="225.0" text="Vendor Name" />
+      <RadioButton layoutX="257.0" layoutY="266.0" mnemonicParsing="false" text="AM">
+         <toggleGroup>
+            <ToggleGroup fx:id="tg" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="321.0" layoutY="266.0" mnemonicParsing="false" text="PM" toggleGroup="$tg" />
+      <TextField fx:id="deliveryTimeField" layoutX="104.0" layoutY="262.0" text="Delivery time" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#BackButtonOnClick" text="&lt;" />
+      <Button layoutX="410.0" layoutY="351.0" mnemonicParsing="false" onAction="#mainMenuButtonOnClick" text="Main Menu" />
+      <Button layoutX="507.0" layoutY="351.0" mnemonicParsing="false" onAction="#logoutButtonOnCliCk" text="Log Out" />
+      <Label fx:id="messageLabel" layoutX="263.0" layoutY="307.0" />
+      <Button layoutX="104.0" layoutY="303.0" mnemonicParsing="false" onAction="#confirmButtonOnClick" text="Confirm" />
+      <Label layoutX="141.0" layoutY="7.0" text="Create a Delivery Request">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Button layoutX="103.0" layoutY="344.0" mnemonicParsing="false" onAction="#pendingDeliveiresButtonOnClIck" prefHeight="39.0" prefWidth="136.0" text="Pending Deliveries" />
+   </children>
+</AnchorPane>

@@ -1,9 +1,16 @@
-module com.example.fxml {
+module com.example.finalprojectbookfair {
     requires javafx.controls;
     requires javafx.fxml;
-    requires java.desktop;
 
 
-    opens com.example.fxml to javafx.fxml;
-    exports com.example.fxml;
+    opens com.example.finalprojectbookfair to javafx.fxml;
+
+
+    exports com.example.finalprojectbookfair;
+    exports com.example.finalprojectbookfair.Admin;
+    opens com.example.finalprojectbookfair.Admin to javafx.fxml;
+    exports com.example.finalprojectbookfair.Logistics;
+    opens com.example.finalprojectbookfair.Logistics to javafx.fxml;
+    exports com.example.finalprojectbookfair.Admin.Goal1;
+    opens com.example.finalprojectbookfair.Admin.Goal1 to javafx.fxml;
 }

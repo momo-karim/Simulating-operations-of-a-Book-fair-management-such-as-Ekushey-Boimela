@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="465.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalprojectbookfair.Admin.ScheduledEventController">
+   <children >
+      <Text layoutX="222.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Scheduled Event">
+         <font>
+            <Font size="28.0" />
+         </font></Text>
+      <TableView fx:id="EventTC" layoutX="32.0" layoutY="45.0" prefHeight="200.0" prefWidth="506.0">
+         <columns>
+            <TableColumn fx:id="eventTilteTC" prefWidth="113.0" text="Event titel" />
+            <TableColumn fx:id="PreferreddateTC" prefWidth="96.0" text="Preferred date" />
+            <TableColumn fx:id="TimeDurationTC" prefWidth="114.0" text="Time / Duration" />
+            <TableColumn fx:id="EquipmentTC" prefWidth="121.0" text="Equipment" />
+            <TableColumn fx:id="LogisticsTC" prefWidth="58.0" text="Logistics" />
+         </columns>
+      </TableView>
+      <Button layoutX="3.0" layoutY="14.0" mnemonicParsing="false" onAction="#onBackWordButtonOnClick" text="&lt;" />
+      <TextField fx:id="EventNameField" layoutX="32.0" layoutY="261.0" opacity="0.52" text="Event Name" />
+      <Button layoutX="206.0" layoutY="261.0" mnemonicParsing="false" onAction="#aproveOnAction" text="Approve" />
+      <Button layoutX="285.0" layoutY="261.0" mnemonicParsing="false" onAction="#createEventOnAction" text="Create event" />
+      <TableView fx:id="ResourcesTV" layoutX="548.0" layoutY="45.0" prefHeight="368.0" prefWidth="149.0">
+         <columns>
+            <TableColumn fx:id="resource" prefWidth="75.0" text="Resources" />
+            <TableColumn fx:id="quantityTC" prefWidth="75.0" text="Quantity" />
+         </columns>
+      </TableView>
+      <Button layoutX="324.0" layoutY="374.0" mnemonicParsing="false" onAction="#onLogOutButtonClick" text="Log out" />
+      <Label fx:id="massageLabel" layoutX="140.0" layoutY="319.0" />
+   </children>
+</AnchorPane>
