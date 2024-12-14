@@ -3,7 +3,7 @@ package com.example.finalprojectbookfair.Admin;
 
 import java.time.LocalDate;
 
-public class Event {
+public class  Event {
     private String name;
     private LocalDate date;
     private String location;

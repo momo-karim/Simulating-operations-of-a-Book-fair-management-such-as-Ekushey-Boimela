@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 
-public class eventSchedule {
+public class  eventSchedule {
     @javafx.fxml.FXML
     private TableColumn timeTC;
     @javafx.fxml.FXML

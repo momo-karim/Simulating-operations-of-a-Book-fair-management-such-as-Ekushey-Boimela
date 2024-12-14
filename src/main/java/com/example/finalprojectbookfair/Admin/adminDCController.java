@@ -5,7 +5,7 @@ import javafx.event.ActionEvent;
 
 import java.io.IOException;
 
-public class adminDCController {
+public class  adminDCController {
     public void setter() throws IOException{
 
     }

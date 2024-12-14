@@ -44,7 +44,7 @@ public class UserRoleManagementControleler {
     private DatePicker dobDP;
     verifiedUsers users;
     public void setter(verifiedUsers users){
-        this.users= users;
+        this.users= users ;
 
 
     }

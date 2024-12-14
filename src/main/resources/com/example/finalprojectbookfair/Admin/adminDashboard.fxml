@@ -17,7 +17,7 @@
       <Text layoutX="282.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" />
       <Button layoutX="525.0" layoutY="312.0" mnemonicParsing="false" onAction="#onLogOut" text="Logout" />
       <VBox layoutX="10.0" layoutY="10.0" prefHeight="340.0" prefWidth="139.0">
-         <children>
+         <children >
             <Button mnemonicParsing="false" onAction="#manageUserRoleOnAction" prefHeight="51.0" prefWidth="138.0" text="Manage User Role" />
             <Button mnemonicParsing="false" onAction="#exibitorApplicationAction" prefHeight="47.0" prefWidth="139.0" text="Exibitor Application" />
             <Button mnemonicParsing="false" onAction="#eventProposalModuleOnAction" prefHeight="46.0" prefWidth="139.0" text="Event Proposal Module" />

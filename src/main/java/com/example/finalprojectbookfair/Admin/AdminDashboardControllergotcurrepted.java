@@ -8,7 +8,7 @@ import javafx.scene.Node;
 
 import java.io.IOException;
 
-public class AdminDashboardControllergotcurrepted {
+public class  AdminDashboardControllergotcurrepted {
     //public void setter()throws IOException{}
     admin Admin;
     public void setter(admin Admin) {

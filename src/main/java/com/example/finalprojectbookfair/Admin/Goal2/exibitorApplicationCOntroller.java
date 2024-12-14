@@ -86,6 +86,6 @@ public class exibitorApplicationCOntroller {
     public void logoutbuttonOnClick(ActionEvent actionEvent) throws IOException {
 
         SceneSwitcher.switchScene(actionEvent, "login.fxml");
-        messageLabel.setText("Logged out successfully.");
+        messageLabel.setText("Logged out successfully.") ;
     }
 }

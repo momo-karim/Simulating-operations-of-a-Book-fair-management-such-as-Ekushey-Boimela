@@ -2,7 +2,7 @@ package com.example.finalprojectbookfair;
 
 import java.time.LocalDate;
 
-public class UserClass {
+public class  UserClass {
     private String id, UserName, Password, Gender, Designation;
     private LocalDate dob;
 

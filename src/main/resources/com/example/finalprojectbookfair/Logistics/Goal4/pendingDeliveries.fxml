@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="526.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="User 2(Logistics).Pendingdeliveries">
-   <children>
+   <children >
       <TableView fx:id="deliveryTV" layoutX="36.0" layoutY="78.0" prefHeight="200.0" prefWidth="530.0">
          <columns>
             <TableColumn fx:id="nameTC" prefWidth="75.0" text="Name" />
