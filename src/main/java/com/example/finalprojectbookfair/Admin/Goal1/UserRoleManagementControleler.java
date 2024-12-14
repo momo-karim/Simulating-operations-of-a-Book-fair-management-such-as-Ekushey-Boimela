@@ -1,11 +1,13 @@
 package com.example.finalprojectbookfair.Admin.Goal1;
 
+import com.example.finalprojectbookfair.SceneSwitcher;
 import com.example.finalprojectbookfair.UserClass;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 
+import java.io.IOException;
 import java.time.LocalDate;
 
 public class UserRoleManagementControleler {
@@ -99,28 +101,15 @@ public class UserRoleManagementControleler {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 
     @javafx.fxml.FXML
-    public void logOutbuttonclick(ActionEvent actionEvent) {
+    public void logOutbuttonclick(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent,"hello-view.fxml");
     }
 
     @javafx.fxml.FXML
-    public void backbuttonOnClick(ActionEvent actionEvent) {
+    public void backbuttonOnClick(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent, "login.fxml");
     }
 }

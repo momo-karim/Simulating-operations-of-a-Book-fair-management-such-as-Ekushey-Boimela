@@ -20,7 +20,8 @@ public class  AdminDashboardControllergotcurrepted {
 
 
     @Deprecated
-    public void onExibitorApplication(ActionEvent actionEvent) {
+    public void onExibitorApplication(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent, "exibitorApplication.fxml");
     }
 
     @javafx.fxml.FXML
@@ -47,7 +48,8 @@ public class  AdminDashboardControllergotcurrepted {
     }
 
     @javafx.fxml.FXML
-    public void scheduledEventOnACtion(ActionEvent actionEvent) {
+    public void scheduledEventOnACtion(ActionEvent actionEvent) throws IOException {
+        SceneSwitcher.switchScene(actionEvent,"ScheduledEvent.fxml");
 
     }
 
@@ -65,6 +67,7 @@ public class  AdminDashboardControllergotcurrepted {
 
     @javafx.fxml.FXML
     public void generateReportsOnAction(ActionEvent actionEvent) {
+
     }
 
     @javafx.fxml.FXML
